@@ -1,0 +1,299 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6730F6FC1CC4D6EB0082F025 /* NSView+Dumping.m in Sources */ = {isa = PBXBuildFile; fileRef = 6730F6FB1CC4D6EB0082F025 /* NSView+Dumping.m */; };
+		676121FF1CB5FC10007D43E0 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 676121FE1CB5FC10007D43E0 /* AppKit.framework */; };
+		676122011CB5FC10007D43E0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 676122001CB5FC10007D43E0 /* Foundation.framework */; };
+		676122051CB5FC10007D43E0 /* LFAutoTarget.xcscheme in Resources */ = {isa = PBXBuildFile; fileRef = 676122041CB5FC10007D43E0 /* LFAutoTarget.xcscheme */; };
+		676122081CB5FC10007D43E0 /* LFAutoTarget.m in Sources */ = {isa = PBXBuildFile; fileRef = 676122071CB5FC10007D43E0 /* LFAutoTarget.m */; };
+		6761220B1CB5FC10007D43E0 /* NSObject_Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 6761220A1CB5FC10007D43E0 /* NSObject_Extension.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		6730F6FA1CC4D6EB0082F025 /* NSView+Dumping.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSView+Dumping.h"; sourceTree = "<group>"; };
+		6730F6FB1CC4D6EB0082F025 /* NSView+Dumping.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSView+Dumping.m"; sourceTree = "<group>"; };
+		676121FB1CB5FC10007D43E0 /* LFAutoTarget.xcplugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LFAutoTarget.xcplugin; sourceTree = BUILT_PRODUCTS_DIR; };
+		676121FE1CB5FC10007D43E0 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		676122001CB5FC10007D43E0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		676122041CB5FC10007D43E0 /* LFAutoTarget.xcscheme */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = LFAutoTarget.xcscheme; path = LFAutoTarget.xcodeproj/xcshareddata/xcschemes/LFAutoTarget.xcscheme; sourceTree = SOURCE_ROOT; };
+		676122061CB5FC10007D43E0 /* LFAutoTarget.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LFAutoTarget.h; sourceTree = "<group>"; };
+		676122071CB5FC10007D43E0 /* LFAutoTarget.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LFAutoTarget.m; sourceTree = "<group>"; };
+		676122091CB5FC10007D43E0 /* NSObject_Extension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSObject_Extension.h; sourceTree = "<group>"; };
+		6761220A1CB5FC10007D43E0 /* NSObject_Extension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSObject_Extension.m; sourceTree = "<group>"; };
+		6761220C1CB5FC10007D43E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		676121F91CB5FC10007D43E0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				676121FF1CB5FC10007D43E0 /* AppKit.framework in Frameworks */,
+				676122011CB5FC10007D43E0 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		676121F21CB5FC10007D43E0 = {
+			isa = PBXGroup;
+			children = (
+				676122021CB5FC10007D43E0 /* LFAutoTarget */,
+				676121FD1CB5FC10007D43E0 /* Frameworks */,
+				676121FC1CB5FC10007D43E0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		676121FC1CB5FC10007D43E0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				676121FB1CB5FC10007D43E0 /* LFAutoTarget.xcplugin */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		676121FD1CB5FC10007D43E0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				676121FE1CB5FC10007D43E0 /* AppKit.framework */,
+				676122001CB5FC10007D43E0 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		676122021CB5FC10007D43E0 /* LFAutoTarget */ = {
+			isa = PBXGroup;
+			children = (
+				676122061CB5FC10007D43E0 /* LFAutoTarget.h */,
+				676122071CB5FC10007D43E0 /* LFAutoTarget.m */,
+				676122091CB5FC10007D43E0 /* NSObject_Extension.h */,
+				6761220A1CB5FC10007D43E0 /* NSObject_Extension.m */,
+				6730F6FA1CC4D6EB0082F025 /* NSView+Dumping.h */,
+				6730F6FB1CC4D6EB0082F025 /* NSView+Dumping.m */,
+				6761220C1CB5FC10007D43E0 /* Info.plist */,
+				676122031CB5FC10007D43E0 /* Supporting Files */,
+			);
+			path = LFAutoTarget;
+			sourceTree = "<group>";
+		};
+		676122031CB5FC10007D43E0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				676122041CB5FC10007D43E0 /* LFAutoTarget.xcscheme */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		676121FA1CB5FC10007D43E0 /* LFAutoTarget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6761220F1CB5FC10007D43E0 /* Build configuration list for PBXNativeTarget "LFAutoTarget" */;
+			buildPhases = (
+				676121F71CB5FC10007D43E0 /* Sources */,
+				676121F81CB5FC10007D43E0 /* Resources */,
+				676121F91CB5FC10007D43E0 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LFAutoTarget;
+			productName = LFAutoTarget;
+			productReference = 676121FB1CB5FC10007D43E0 /* LFAutoTarget.xcplugin */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		676121F31CB5FC10007D43E0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = linfeng;
+				TargetAttributes = {
+					676121FA1CB5FC10007D43E0 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+				};
+			};
+			buildConfigurationList = 676121F61CB5FC10007D43E0 /* Build configuration list for PBXProject "LFAutoTarget" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 676121F21CB5FC10007D43E0;
+			productRefGroup = 676121FC1CB5FC10007D43E0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				676121FA1CB5FC10007D43E0 /* LFAutoTarget */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		676121F81CB5FC10007D43E0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				676122051CB5FC10007D43E0 /* LFAutoTarget.xcscheme in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		676121F71CB5FC10007D43E0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6730F6FC1CC4D6EB0082F025 /* NSView+Dumping.m in Sources */,
+				676122081CB5FC10007D43E0 /* LFAutoTarget.m in Sources */,
+				6761220B1CB5FC10007D43E0 /* NSObject_Extension.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		6761220D1CB5FC10007D43E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+			};
+			name = Debug;
+		};
+		6761220E1CB5FC10007D43E0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+			};
+			name = Release;
+		};
+		676122101CB5FC10007D43E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEPLOYMENT_LOCATION = YES;
+				DSTROOT = "$(HOME)";
+				INFOPLIST_FILE = LFAutoTarget/Info.plist;
+				INSTALL_PATH = "/Library/Application Support/Developer/Shared/Xcode/Plug-ins";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tuniu.app.autotarget.LFAutoTarget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xcplugin;
+			};
+			name = Debug;
+		};
+		676122111CB5FC10007D43E0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEPLOYMENT_LOCATION = YES;
+				DSTROOT = "$(HOME)";
+				INFOPLIST_FILE = LFAutoTarget/Info.plist;
+				INSTALL_PATH = "/Library/Application Support/Developer/Shared/Xcode/Plug-ins";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tuniu.app.autotarget.LFAutoTarget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xcplugin;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		676121F61CB5FC10007D43E0 /* Build configuration list for PBXProject "LFAutoTarget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6761220D1CB5FC10007D43E0 /* Debug */,
+				6761220E1CB5FC10007D43E0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6761220F1CB5FC10007D43E0 /* Build configuration list for PBXNativeTarget "LFAutoTarget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				676122101CB5FC10007D43E0 /* Debug */,
+				676122111CB5FC10007D43E0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 676121F31CB5FC10007D43E0 /* Project object */;
+}
