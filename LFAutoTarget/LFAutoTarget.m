@@ -11,6 +11,7 @@
 
 #import "LFAutoTarget.h"
 #import "NSView+Dumping.h"
+#import "Xcode3TargetMembershipDataSource+Hook.h"
 
 @interface LFAutoTarget()
 
@@ -32,16 +33,12 @@
     if (self = [super init]) {
         // reference to plugin's bundle, for resource access
         self.bundle = plugin;
+        [Xcode3TargetMembershipDataSource hook];
         [[NSNotificationCenter defaultCenter] addObserver:self
                                                  selector:@selector(applicationDidFinishLaunching:)
                                                      name:NSApplicationDidFinishLaunchingNotification
                                                    object:nil];
-        
-        [[NSNotificationCenter defaultCenter] addObserver:self
-                                                 selector:@selector(viewDidUpdateTrackingAreas:)
-                                                     name:NSViewDidUpdateTrackingAreasNotification
-                                                   object:nil];
-    }
+        }
     return self;
 }
 
@@ -53,59 +50,22 @@
 #pragma mark - 通知及UI响应
 - (void)applicationDidFinishLaunching:(NSNotification*)notification
 {
-    // 监听NSTextView的变化
-    [[NSNotificationCenter defaultCenter] addObserver:self
-                                             selector:@selector(selectionDidChange:)
-                                                 name:NSTextViewDidChangeSelectionNotification
-                                               object:nil];
     // 获取 Edit
-    NSMenuItem *editMenuItem = [[NSApp mainMenu] itemWithTitle:@"Edit"];
-    if (editMenuItem) {
+    NSMenuItem *pluginsMenuItem = [[NSApp mainMenu] itemWithTitle:@"Plugins"];
+    if (pluginsMenuItem) {
         // 加一个分隔线
-        [[editMenuItem submenu] addItem:[NSMenuItem separatorItem]];
+        [[pluginsMenuItem submenu] addItem:[NSMenuItem separatorItem]];
         // 加一个menu
-        NSMenuItem *newMenuItem = [[NSMenuItem alloc] initWithTitle:@"What is selected" action:@selector(showSelected:) keyEquivalent:@""];
+        NSMenuItem *newMenuItem = [[NSMenuItem alloc] initWithTitle:@"Enabel AutoTarget" action:@selector(changeEnabelState:) keyEquivalent:@""];
         [newMenuItem setTarget:self];
         [newMenuItem setKeyEquivalentModifierMask: NSAlternateKeyMask];
-        [[editMenuItem submenu] addItem:newMenuItem];   
+        [[pluginsMenuItem submenu] addItem:newMenuItem];
     }
 }
 
-- (void)selectionDidChange:(NSNotification *)notification
+- (void)changeEnabelState:(NSNotification *)notification
 {
-    if ([[notification object] isKindOfClass:[NSTextView class]]) {
-        NSTextView* textView = (NSTextView *)[notification object];
-        
-        NSArray* selectedRanges = [textView selectedRanges];
-        if (selectedRanges.count==0) {
-            return;
-        }
-        
-        NSRange selectedRange = [[selectedRanges objectAtIndex:0] rangeValue];
-        NSString* text = textView.textStorage.string;
-        self.selectedText = [text substringWithRange:selectedRange];
-        NSLog(@"selectionDidChange %@", self.selectedText);
-    }
-}
-
-- (void)showSelected:(NSNotification *)notification
-{
-    NSAlert *alert = [[NSAlert alloc] init];
-    [alert setMessageText: self.selectedText];
-    [alert runModal];
-}
-
-- (void)viewDidUpdateTrackingAreas:(NSNotification *)notification
-{
-    //打印出视图对象以及视图的大小
-    NSView *view = notification.object;
-    if ([view respondsToSelector:@selector(frame)]) {
-        if ([view isKindOfClass:[NSTableView class]]) {
-            NSTableView *tableView = (NSTableView *)view;
-            NSLog(@"NSTableView dataSource : %@", tableView.dataSource);
-            
-        }
-    }
+    
 }
 
 @end

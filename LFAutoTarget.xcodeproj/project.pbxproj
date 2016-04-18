@@ -7,15 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		67088CD91CC5367F00FB64FA /* Xcode3TargetMembershipDataSource+Hook.m in Sources */ = {isa = PBXBuildFile; fileRef = 67088CD81CC5367F00FB64FA /* Xcode3TargetMembershipDataSource+Hook.m */; };
 		6730F6FC1CC4D6EB0082F025 /* NSView+Dumping.m in Sources */ = {isa = PBXBuildFile; fileRef = 6730F6FB1CC4D6EB0082F025 /* NSView+Dumping.m */; };
 		676121FF1CB5FC10007D43E0 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 676121FE1CB5FC10007D43E0 /* AppKit.framework */; };
 		676122011CB5FC10007D43E0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 676122001CB5FC10007D43E0 /* Foundation.framework */; };
 		676122051CB5FC10007D43E0 /* LFAutoTarget.xcscheme in Resources */ = {isa = PBXBuildFile; fileRef = 676122041CB5FC10007D43E0 /* LFAutoTarget.xcscheme */; };
 		676122081CB5FC10007D43E0 /* LFAutoTarget.m in Sources */ = {isa = PBXBuildFile; fileRef = 676122071CB5FC10007D43E0 /* LFAutoTarget.m */; };
 		6761220B1CB5FC10007D43E0 /* NSObject_Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 6761220A1CB5FC10007D43E0 /* NSObject_Extension.m */; };
+		676C08401CC53C9100AB0C0D /* Xcode3UI in Frameworks */ = {isa = PBXBuildFile; fileRef = 676C083F1CC53C9100AB0C0D /* Xcode3UI */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		67088CD61CC535DE00FB64FA /* Xcode3TargetMembershipDataSource.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Xcode3TargetMembershipDataSource.h; sourceTree = "<group>"; };
+		67088CD71CC5367F00FB64FA /* Xcode3TargetMembershipDataSource+Hook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Xcode3TargetMembershipDataSource+Hook.h"; sourceTree = "<group>"; };
+		67088CD81CC5367F00FB64FA /* Xcode3TargetMembershipDataSource+Hook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Xcode3TargetMembershipDataSource+Hook.m"; sourceTree = "<group>"; };
 		6730F6FA1CC4D6EB0082F025 /* NSView+Dumping.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSView+Dumping.h"; sourceTree = "<group>"; };
 		6730F6FB1CC4D6EB0082F025 /* NSView+Dumping.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSView+Dumping.m"; sourceTree = "<group>"; };
 		676121FB1CB5FC10007D43E0 /* LFAutoTarget.xcplugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LFAutoTarget.xcplugin; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -27,6 +32,7 @@
 		676122091CB5FC10007D43E0 /* NSObject_Extension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSObject_Extension.h; sourceTree = "<group>"; };
 		6761220A1CB5FC10007D43E0 /* NSObject_Extension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSObject_Extension.m; sourceTree = "<group>"; };
 		6761220C1CB5FC10007D43E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		676C083F1CC53C9100AB0C0D /* Xcode3UI */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = Xcode3UI; path = ../../../../../../Applications/Xcode.app/Contents/PlugIns/Xcode3UI.ideplugin/Contents/MacOS/Xcode3UI; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +41,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				676121FF1CB5FC10007D43E0 /* AppKit.framework in Frameworks */,
+				676C08401CC53C9100AB0C0D /* Xcode3UI in Frameworks */,
 				676122011CB5FC10007D43E0 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -71,6 +78,10 @@
 		676122021CB5FC10007D43E0 /* LFAutoTarget */ = {
 			isa = PBXGroup;
 			children = (
+				676C083F1CC53C9100AB0C0D /* Xcode3UI */,
+				67088CD61CC535DE00FB64FA /* Xcode3TargetMembershipDataSource.h */,
+				67088CD71CC5367F00FB64FA /* Xcode3TargetMembershipDataSource+Hook.h */,
+				67088CD81CC5367F00FB64FA /* Xcode3TargetMembershipDataSource+Hook.m */,
 				676122061CB5FC10007D43E0 /* LFAutoTarget.h */,
 				676122071CB5FC10007D43E0 /* LFAutoTarget.m */,
 				676122091CB5FC10007D43E0 /* NSObject_Extension.h */,
@@ -160,6 +171,7 @@
 			files = (
 				6730F6FC1CC4D6EB0082F025 /* NSView+Dumping.m in Sources */,
 				676122081CB5FC10007D43E0 /* LFAutoTarget.m in Sources */,
+				67088CD91CC5367F00FB64FA /* Xcode3TargetMembershipDataSource+Hook.m in Sources */,
 				6761220B1CB5FC10007D43E0 /* NSObject_Extension.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
