@@ -12,10 +12,13 @@
 #import "LFAutoTarget.h"
 #import "NSView+Dumping.h"
 #import "Xcode3TargetMembershipDataSource+Hook.h"
+#import "LFAutoTargetSettingWindowController.h"
 
 @interface LFAutoTarget()
 
 @property (nonatomic, strong, readwrite) NSBundle *bundle;
+@property (nonatomic, strong) NSMenuItem *autoTargetMenuItem;
+@property (nonatomic, strong) LFAutoTargetSettingWindowController *settingWindowController;
 
 @end
 
@@ -55,16 +58,17 @@
         // 加一个分隔线
         [[pluginsMenuItem submenu] addItem:[NSMenuItem separatorItem]];
         // 加一个menu
-        NSMenuItem *newMenuItem = [[NSMenuItem alloc] initWithTitle:@"Enabel AutoTarget" action:@selector(changeEnabelState:) keyEquivalent:@""];
-        [newMenuItem setTarget:self];
-        [newMenuItem setKeyEquivalentModifierMask: NSAlternateKeyMask];
-        [[pluginsMenuItem submenu] addItem:newMenuItem];
+        self.autoTargetMenuItem = [[NSMenuItem alloc] initWithTitle:@"LFAutoTarget" action:@selector(configAutoTarget:) keyEquivalent:@""];
+        [self.autoTargetMenuItem setTarget:self];
+        [self.autoTargetMenuItem setKeyEquivalentModifierMask: NSAlternateKeyMask];
+        [[pluginsMenuItem submenu] addItem:self.autoTargetMenuItem];
     }
 }
 
-- (void)changeEnabelState:(NSNotification *)notification
+- (void)configAutoTarget:(NSNotification *)notification
 {
-    
+    self.settingWindowController = [[LFAutoTargetSettingWindowController alloc] initWithWindowNibName:@"LFAutoTargetSettingWindowController"];
+    [self.settingWindowController showWindow:self.settingWindowController];
 }
 
 @end

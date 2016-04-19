@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		67091FC11CC629590043A66D /* LFAutoTargetSettingWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 67091FC01CC629590043A66D /* LFAutoTargetSettingWindowController.m */; };
 		676121FF1CB5FC10007D43E0 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 676121FE1CB5FC10007D43E0 /* AppKit.framework */; };
 		676122011CB5FC10007D43E0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 676122001CB5FC10007D43E0 /* Foundation.framework */; };
 		676122051CB5FC10007D43E0 /* LFAutoTarget.xcscheme in Resources */ = {isa = PBXBuildFile; fileRef = 676122041CB5FC10007D43E0 /* LFAutoTarget.xcscheme */; };
@@ -16,9 +17,12 @@
 		676C084D1CC6109600AB0C0D /* NSView+Dumping.m in Sources */ = {isa = PBXBuildFile; fileRef = 676C084B1CC6109600AB0C0D /* NSView+Dumping.m */; };
 		676C08501CC610B600AB0C0D /* Xcode3TargetMembershipDataSource+Hook.m in Sources */ = {isa = PBXBuildFile; fileRef = 676C084F1CC610B600AB0C0D /* Xcode3TargetMembershipDataSource+Hook.m */; };
 		676C08531CC6113100AB0C0D /* NSObject+MethodSwzzle.m in Sources */ = {isa = PBXBuildFile; fileRef = 676C08521CC6113100AB0C0D /* NSObject+MethodSwzzle.m */; };
+		67718A1B1CC6367A000879D0 /* LFAutoTargetSettingWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 67718A1A1CC6367A000879D0 /* LFAutoTargetSettingWindowController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		67091FBF1CC629590043A66D /* LFAutoTargetSettingWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFAutoTargetSettingWindowController.h; sourceTree = "<group>"; };
+		67091FC01CC629590043A66D /* LFAutoTargetSettingWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFAutoTargetSettingWindowController.m; sourceTree = "<group>"; };
 		676121FB1CB5FC10007D43E0 /* LFAutoTarget.xcplugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LFAutoTarget.xcplugin; sourceTree = BUILT_PRODUCTS_DIR; };
 		676121FE1CB5FC10007D43E0 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
 		676122001CB5FC10007D43E0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
@@ -36,6 +40,7 @@
 		676C084F1CC610B600AB0C0D /* Xcode3TargetMembershipDataSource+Hook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Xcode3TargetMembershipDataSource+Hook.m"; sourceTree = "<group>"; };
 		676C08511CC6113100AB0C0D /* NSObject+MethodSwzzle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+MethodSwzzle.h"; sourceTree = "<group>"; };
 		676C08521CC6113100AB0C0D /* NSObject+MethodSwzzle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MethodSwzzle.m"; sourceTree = "<group>"; };
+		67718A1A1CC6367A000879D0 /* LFAutoTargetSettingWindowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LFAutoTargetSettingWindowController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +57,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		67091FBE1CC6291E0043A66D /* WindowController */ = {
+			isa = PBXGroup;
+			children = (
+				67091FBF1CC629590043A66D /* LFAutoTargetSettingWindowController.h */,
+				67091FC01CC629590043A66D /* LFAutoTargetSettingWindowController.m */,
+				67718A1A1CC6367A000879D0 /* LFAutoTargetSettingWindowController.xib */,
+			);
+			path = WindowController;
+			sourceTree = "<group>";
+		};
 		676121F21CB5FC10007D43E0 = {
 			isa = PBXGroup;
 			children = (
@@ -82,6 +97,7 @@
 		676122021CB5FC10007D43E0 /* LFAutoTarget */ = {
 			isa = PBXGroup;
 			children = (
+				67091FBE1CC6291E0043A66D /* WindowController */,
 				676C08441CC6109600AB0C0D /* CocoaFiles */,
 				676C08481CC6109600AB0C0D /* Hooks */,
 				676C08491CC6109600AB0C0D /* Tools */,
@@ -187,6 +203,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				67718A1B1CC6367A000879D0 /* LFAutoTargetSettingWindowController.xib in Resources */,
 				676122051CB5FC10007D43E0 /* LFAutoTarget.xcscheme in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -202,6 +219,7 @@
 				6761220B1CB5FC10007D43E0 /* NSObject_Extension.m in Sources */,
 				676C08501CC610B600AB0C0D /* Xcode3TargetMembershipDataSource+Hook.m in Sources */,
 				676C084D1CC6109600AB0C0D /* NSView+Dumping.m in Sources */,
+				67091FC11CC629590043A66D /* LFAutoTargetSettingWindowController.m in Sources */,
 				676C08531CC6113100AB0C0D /* NSObject+MethodSwzzle.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

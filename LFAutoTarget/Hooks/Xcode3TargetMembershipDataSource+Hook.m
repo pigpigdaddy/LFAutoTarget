@@ -8,11 +8,7 @@
 
 #import "Xcode3TargetMembershipDataSource+Hook.h"
 #import "NSObject+MethodSwzzle.h"
-
-#define kTarget1 @"TuNiuApp"
-#define kTarget2 @"TuNiuApp pro"
-#define kTarget3 @"TuNiuApp iPad"
-
+#import "LFAutoTarget.h"
 
 @implementation Xcode3TargetMembershipDataSource (Hook)
 
@@ -25,12 +21,21 @@
 {
     // 先调用原来的方法
     [self updateTargetsHook];
-    // 修改wrappedTarget的属性值
-    NSMutableArray *wrappedTargets = [self valueForKey:@"wrappedTargets"];
-    for (id wrappedTarget in wrappedTargets) {
-        if ([[wrappedTarget valueForKey:@"name"] isEqualToString:kTarget1] || [[wrappedTarget valueForKey:@"name"] isEqualToString:kTarget2] || [[wrappedTarget valueForKey:@"name"] isEqualToString:kTarget3]) {
-            [wrappedTarget setValue:@YES forKey:@"selected"];
-        }
+    
+    id targetsString = [[NSUserDefaults standardUserDefaults] objectForKey:@"kAutoTargets"];
+    if ([targetsString isKindOfClass:[NSString class]]) {
+        NSString *targets = targetsString;
+        NSArray *targetsArray = [targets componentsSeparatedByString:@","];
+        // 修改wrappedTarget的属性值
+        NSMutableArray *wrappedTargets = [self valueForKey:@"wrappedTargets"];
+        [wrappedTargets enumerateObjectsUsingBlock:^(id  _Nonnull wrappedTarget, NSUInteger idx, BOOL * _Nonnull stop) {
+            [targetsArray enumerateObjectsUsingBlock:^(NSString *target, NSUInteger idx, BOOL * _Nonnull stop) {
+                if ([target isEqualToString:[wrappedTarget valueForKey:@"name"]]) {
+                    [wrappedTarget setValue:@YES forKey:@"selected"];
+                    return ;
+                }
+            }];
+        }];
     }
 }
 
