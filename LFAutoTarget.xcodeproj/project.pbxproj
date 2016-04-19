@@ -18,6 +18,7 @@
 		676C08501CC610B600AB0C0D /* Xcode3TargetMembershipDataSource+Hook.m in Sources */ = {isa = PBXBuildFile; fileRef = 676C084F1CC610B600AB0C0D /* Xcode3TargetMembershipDataSource+Hook.m */; };
 		676C08531CC6113100AB0C0D /* NSObject+MethodSwzzle.m in Sources */ = {isa = PBXBuildFile; fileRef = 676C08521CC6113100AB0C0D /* NSObject+MethodSwzzle.m */; };
 		67718A1B1CC6367A000879D0 /* LFAutoTargetSettingWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 67718A1A1CC6367A000879D0 /* LFAutoTargetSettingWindowController.xib */; };
+		677828B11CC6842E00A516DC /* screenshot.png in Resources */ = {isa = PBXBuildFile; fileRef = 677828B01CC6842E00A516DC /* screenshot.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +42,7 @@
 		676C08511CC6113100AB0C0D /* NSObject+MethodSwzzle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+MethodSwzzle.h"; sourceTree = "<group>"; };
 		676C08521CC6113100AB0C0D /* NSObject+MethodSwzzle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MethodSwzzle.m"; sourceTree = "<group>"; };
 		67718A1A1CC6367A000879D0 /* LFAutoTargetSettingWindowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LFAutoTargetSettingWindowController.xib; sourceTree = "<group>"; };
+		677828B01CC6842E00A516DC /* screenshot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = screenshot.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +116,7 @@
 		676122031CB5FC10007D43E0 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				677828B01CC6842E00A516DC /* screenshot.png */,
 				676122041CB5FC10007D43E0 /* LFAutoTarget.xcscheme */,
 			);
 			name = "Supporting Files";
@@ -204,6 +207,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				67718A1B1CC6367A000879D0 /* LFAutoTargetSettingWindowController.xib in Resources */,
+				677828B11CC6842E00A516DC /* screenshot.png in Resources */,
 				676122051CB5FC10007D43E0 /* LFAutoTarget.xcscheme in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
