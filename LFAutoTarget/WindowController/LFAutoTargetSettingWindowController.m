@@ -29,8 +29,30 @@
 - (IBAction)confirmButtonAction:(NSButton *)sender {
     // 保存
     NSString *targetString = self.tfTargets.stringValue;
-    [[NSUserDefaults standardUserDefaults] setObject:targetString forKey:kAutoTargets];
+    NSArray *originaArray = [targetString componentsSeparatedByString:@","];
+    
+    NSMutableString *pureTargets = [NSMutableString string];
+    [originaArray enumerateObjectsUsingBlock:^(NSString *target, NSUInteger idx, BOOL * _Nonnull stop) {
+        NSString *pureTarget = [self trimmingWhitespacePrefixSuffix:target];
+        NSLog(@"pureTarget %@", pureTarget);
+        if (idx < originaArray.count - 1) {
+            [pureTargets appendFormat:@"%@,", pureTarget];
+        }else{
+            [pureTargets appendString:pureTarget];
+        }
+    }];
+    
+    [[NSUserDefaults standardUserDefaults] setObject:pureTargets forKey:kAutoTargets];
     [[NSUserDefaults standardUserDefaults] synchronize];
+    
+    NSAlert *alert = [[NSAlert alloc] init];
+    [alert setMessageText:[NSString stringWithFormat:@"Done ! \n %@", pureTargets]];
+    [alert runModal];
+}
+
+- (NSString *)trimmingWhitespacePrefixSuffix:(NSString *)string
+{
+    return [string stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];
 }
 
 @end
