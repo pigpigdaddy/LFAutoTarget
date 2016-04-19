@@ -53,7 +53,7 @@
 - (void)applicationDidFinishLaunching:(NSNotification*)notification
 {
     // 获取 Edit
-    NSMenuItem *pluginsMenuItem = [[NSApp mainMenu] itemWithTitle:@"Plugins"];
+    NSMenuItem *pluginsMenuItem = [[NSApp mainMenu] itemWithTitle:@"Window"];
     if (pluginsMenuItem) {
         // 加一个分隔线
         [[pluginsMenuItem submenu] addItem:[NSMenuItem separatorItem]];
