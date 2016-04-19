@@ -12,13 +12,4 @@
 
 + (void)pluginDidLoad:(NSBundle *)plugin;
 
-/**
- *  替换方法
- *
- *  @param originalSelector 原方法
- *  @param swizzledSelector 新方法
- */
-+ (void)lf_swizzleInstanceSelector:(SEL)originalSelector withSelector:(SEL)swizzledSelector;
-
-
 @end

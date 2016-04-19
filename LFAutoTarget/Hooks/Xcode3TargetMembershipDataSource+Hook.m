@@ -7,11 +7,11 @@
 //
 
 #import "Xcode3TargetMembershipDataSource+Hook.h"
-#import "NSObject_Extension.h"
+#import "NSObject+MethodSwzzle.h"
 
-#define kTarget1 @"1"
-#define kTarget2 @"2"
-#define kTarget3 @"3"
+#define kTarget1 @"TuNiuApp"
+#define kTarget2 @"TuNiuApp pro"
+#define kTarget3 @"TuNiuApp iPad"
 
 
 @implementation Xcode3TargetMembershipDataSource (Hook)

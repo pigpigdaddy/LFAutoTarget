@@ -16,7 +16,6 @@
 @interface LFAutoTarget()
 
 @property (nonatomic, strong, readwrite) NSBundle *bundle;
-@property (nonatomic, copy) NSString *selectedText;
 
 @end
 
