@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		67091FC11CC629590043A66D /* LFAutoTargetSettingWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 67091FC01CC629590043A66D /* LFAutoTargetSettingWindowController.m */; };
 		676121FF1CB5FC10007D43E0 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 676121FE1CB5FC10007D43E0 /* AppKit.framework */; };
 		676122011CB5FC10007D43E0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 676122001CB5FC10007D43E0 /* Foundation.framework */; };
 		676122051CB5FC10007D43E0 /* LFAutoTarget.xcscheme in Resources */ = {isa = PBXBuildFile; fileRef = 676122041CB5FC10007D43E0 /* LFAutoTarget.xcscheme */; };
@@ -19,6 +18,9 @@
 		676C08531CC6113100AB0C0D /* NSObject+MethodSwzzle.m in Sources */ = {isa = PBXBuildFile; fileRef = 676C08521CC6113100AB0C0D /* NSObject+MethodSwzzle.m */; };
 		67718A1B1CC6367A000879D0 /* LFAutoTargetSettingWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 67718A1A1CC6367A000879D0 /* LFAutoTargetSettingWindowController.xib */; };
 		677828B11CC6842E00A516DC /* screenshot.png in Resources */ = {isa = PBXBuildFile; fileRef = 677828B01CC6842E00A516DC /* screenshot.png */; };
+		67BFA6AF1CCE1BB50007F60A /* LFAutoTargetSettingWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 67091FC01CC629590043A66D /* LFAutoTargetSettingWindowController.m */; };
+		67BFA6B21CCE1BD10007F60A /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 67BFA6B01CCE1BD10007F60A /* 1.png */; };
+		67BFA6B31CCE1BD10007F60A /* 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 67BFA6B11CCE1BD10007F60A /* 2.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +45,8 @@
 		676C08521CC6113100AB0C0D /* NSObject+MethodSwzzle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MethodSwzzle.m"; sourceTree = "<group>"; };
 		67718A1A1CC6367A000879D0 /* LFAutoTargetSettingWindowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LFAutoTargetSettingWindowController.xib; sourceTree = "<group>"; };
 		677828B01CC6842E00A516DC /* screenshot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = screenshot.png; sourceTree = "<group>"; };
+		67BFA6B01CCE1BD10007F60A /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
+		67BFA6B11CCE1BD10007F60A /* 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +103,7 @@
 		676122021CB5FC10007D43E0 /* LFAutoTarget */ = {
 			isa = PBXGroup;
 			children = (
+				67BFA6AE1CCE17340007F60A /* Blog */,
 				67091FBE1CC6291E0043A66D /* WindowController */,
 				676C08441CC6109600AB0C0D /* CocoaFiles */,
 				676C08481CC6109600AB0C0D /* Hooks */,
@@ -148,6 +153,15 @@
 				676C08521CC6113100AB0C0D /* NSObject+MethodSwzzle.m */,
 			);
 			path = Tools;
+			sourceTree = "<group>";
+		};
+		67BFA6AE1CCE17340007F60A /* Blog */ = {
+			isa = PBXGroup;
+			children = (
+				67BFA6B01CCE1BD10007F60A /* 1.png */,
+				67BFA6B11CCE1BD10007F60A /* 2.png */,
+			);
+			path = Blog;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -207,6 +221,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				67718A1B1CC6367A000879D0 /* LFAutoTargetSettingWindowController.xib in Resources */,
+				67BFA6B21CCE1BD10007F60A /* 1.png in Resources */,
+				67BFA6B31CCE1BD10007F60A /* 2.png in Resources */,
 				677828B11CC6842E00A516DC /* screenshot.png in Resources */,
 				676122051CB5FC10007D43E0 /* LFAutoTarget.xcscheme in Resources */,
 			);
@@ -223,7 +239,7 @@
 				6761220B1CB5FC10007D43E0 /* NSObject_Extension.m in Sources */,
 				676C08501CC610B600AB0C0D /* Xcode3TargetMembershipDataSource+Hook.m in Sources */,
 				676C084D1CC6109600AB0C0D /* NSView+Dumping.m in Sources */,
-				67091FC11CC629590043A66D /* LFAutoTargetSettingWindowController.m in Sources */,
+				67BFA6AF1CCE1BB50007F60A /* LFAutoTargetSettingWindowController.m in Sources */,
 				676C08531CC6113100AB0C0D /* NSObject+MethodSwzzle.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
