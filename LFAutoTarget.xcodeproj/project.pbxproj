@@ -21,6 +21,7 @@
 		67BFA6AF1CCE1BB50007F60A /* LFAutoTargetSettingWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 67091FC01CC629590043A66D /* LFAutoTargetSettingWindowController.m */; };
 		67BFA6B21CCE1BD10007F60A /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 67BFA6B01CCE1BD10007F60A /* 1.png */; };
 		67BFA6B31CCE1BD10007F60A /* 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 67BFA6B11CCE1BD10007F60A /* 2.png */; };
+		67BFA6BF1CCE6CA80007F60A /* 3.png in Resources */ = {isa = PBXBuildFile; fileRef = 67BFA6BE1CCE6CA80007F60A /* 3.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +48,7 @@
 		677828B01CC6842E00A516DC /* screenshot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = screenshot.png; sourceTree = "<group>"; };
 		67BFA6B01CCE1BD10007F60A /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
 		67BFA6B11CCE1BD10007F60A /* 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2.png; sourceTree = "<group>"; };
+		67BFA6BE1CCE6CA80007F60A /* 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,6 +162,7 @@
 			children = (
 				67BFA6B01CCE1BD10007F60A /* 1.png */,
 				67BFA6B11CCE1BD10007F60A /* 2.png */,
+				67BFA6BE1CCE6CA80007F60A /* 3.png */,
 			);
 			path = Blog;
 			sourceTree = "<group>";
@@ -223,6 +226,7 @@
 				67718A1B1CC6367A000879D0 /* LFAutoTargetSettingWindowController.xib in Resources */,
 				67BFA6B21CCE1BD10007F60A /* 1.png in Resources */,
 				67BFA6B31CCE1BD10007F60A /* 2.png in Resources */,
+				67BFA6BF1CCE6CA80007F60A /* 3.png in Resources */,
 				677828B11CC6842E00A516DC /* screenshot.png in Resources */,
 				676122051CB5FC10007D43E0 /* LFAutoTarget.xcscheme in Resources */,
 			);
