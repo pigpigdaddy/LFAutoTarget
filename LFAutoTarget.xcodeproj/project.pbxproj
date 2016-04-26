@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		670D41F31CCF13C3002058D3 /* 4.png in Resources */ = {isa = PBXBuildFile; fileRef = 670D41F21CCF13C3002058D3 /* 4.png */; };
 		676121FF1CB5FC10007D43E0 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 676121FE1CB5FC10007D43E0 /* AppKit.framework */; };
 		676122011CB5FC10007D43E0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 676122001CB5FC10007D43E0 /* Foundation.framework */; };
 		676122051CB5FC10007D43E0 /* LFAutoTarget.xcscheme in Resources */ = {isa = PBXBuildFile; fileRef = 676122041CB5FC10007D43E0 /* LFAutoTarget.xcscheme */; };
@@ -27,6 +28,7 @@
 /* Begin PBXFileReference section */
 		67091FBF1CC629590043A66D /* LFAutoTargetSettingWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFAutoTargetSettingWindowController.h; sourceTree = "<group>"; };
 		67091FC01CC629590043A66D /* LFAutoTargetSettingWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFAutoTargetSettingWindowController.m; sourceTree = "<group>"; };
+		670D41F21CCF13C3002058D3 /* 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 4.png; sourceTree = "<group>"; };
 		676121FB1CB5FC10007D43E0 /* LFAutoTarget.xcplugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LFAutoTarget.xcplugin; sourceTree = BUILT_PRODUCTS_DIR; };
 		676121FE1CB5FC10007D43E0 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
 		676122001CB5FC10007D43E0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
@@ -163,6 +165,7 @@
 				67BFA6B01CCE1BD10007F60A /* 1.png */,
 				67BFA6B11CCE1BD10007F60A /* 2.png */,
 				67BFA6BE1CCE6CA80007F60A /* 3.png */,
+				670D41F21CCF13C3002058D3 /* 4.png */,
 			);
 			path = Blog;
 			sourceTree = "<group>";
@@ -224,6 +227,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				67718A1B1CC6367A000879D0 /* LFAutoTargetSettingWindowController.xib in Resources */,
+				670D41F31CCF13C3002058D3 /* 4.png in Resources */,
 				67BFA6B21CCE1BD10007F60A /* 1.png in Resources */,
 				67BFA6B31CCE1BD10007F60A /* 2.png in Resources */,
 				67BFA6BF1CCE6CA80007F60A /* 3.png in Resources */,
